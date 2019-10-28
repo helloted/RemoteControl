@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67CAB30FE49A415723FD4F56 /* Pods_RemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5785754AF403D81BDCD6523F /* Pods_RemoteControl.framework */; };
 		8872E71B235C0DED00CABAFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8872E71A235C0DED00CABAFA /* AppDelegate.m */; };
 		8872E71E235C0DED00CABAFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8872E71D235C0DED00CABAFA /* ViewController.m */; };
 		8872E721235C0DED00CABAFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8872E71F235C0DED00CABAFA /* Main.storyboard */; };
@@ -28,9 +29,16 @@
 		88DEBB922365A47200575829 /* UIView+HTExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DEBB8B2365A47200575829 /* UIView+HTExtention.m */; };
 		88DEBB932365A47200575829 /* HTSlideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DEBB8C2365A47200575829 /* HTSlideController.m */; };
 		88DEBB942365A47200575829 /* HTSlideBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DEBB8F2365A47200575829 /* HTSlideBaseController.m */; };
+		88DEBB9723672F4300575829 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DEBB9523672F4200575829 /* Reachability.m */; };
+		88DEBB992367316700575829 /* mac@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DEBB982367316700575829 /* mac@3x.png */; };
+		88DEBB9B236732E500575829 /* light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DEBB9A236732E500575829 /* light@3x.png */; };
+		88DEBB9E2367337000575829 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DEBB9D2367337000575829 /* InfoViewController.m */; };
+		88DEBBA1236736BE00575829 /* refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DEBBA0236736BE00575829 /* refresh@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ADC995353990D3FC46A7460 /* Pods-RemoteControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControl/Pods-RemoteControl.release.xcconfig"; sourceTree = "<group>"; };
+		5785754AF403D81BDCD6523F /* Pods_RemoteControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8872E716235C0DED00CABAFA /* RemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8872E719235C0DED00CABAFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8872E71A235C0DED00CABAFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +70,15 @@
 		88DEBB8D2365A47200575829 /* HTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMainViewController.h; sourceTree = "<group>"; };
 		88DEBB8E2365A47200575829 /* HTSlideSideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSlideSideBarController.h; sourceTree = "<group>"; };
 		88DEBB8F2365A47200575829 /* HTSlideBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSlideBaseController.m; sourceTree = "<group>"; };
+		88DEBB9523672F4200575829 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		88DEBB9623672F4300575829 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		88DEBB982367316700575829 /* mac@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mac@3x.png"; path = "icons/mac@3x.png"; sourceTree = "<group>"; };
+		88DEBB9A236732E500575829 /* light@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light@3x.png"; path = "icons/light@3x.png"; sourceTree = "<group>"; };
+		88DEBB9C2367337000575829 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		88DEBB9D2367337000575829 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		88DEBB9F2367339E00575829 /* KeyBoadKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyBoadKey.h; sourceTree = "<group>"; };
+		88DEBBA0236736BE00575829 /* refresh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "refresh@3x.png"; path = "icons/refresh@3x.png"; sourceTree = "<group>"; };
+		F3C4DAE3A3992861AFE4C115 /* Pods-RemoteControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControl/Pods-RemoteControl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +86,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CAB30FE49A415723FD4F56 /* Pods_RemoteControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F33F759B93D96450E7D8E1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3C4DAE3A3992861AFE4C115 /* Pods-RemoteControl.debug.xcconfig */,
+				4ADC995353990D3FC46A7460 /* Pods-RemoteControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8872E70D235C0DED00CABAFA = {
 			isa = PBXGroup;
 			children = (
 				8872E718235C0DED00CABAFA /* RemoteControl */,
 				8872E717235C0DED00CABAFA /* Products */,
+				0F33F759B93D96450E7D8E1C /* Pods */,
+				CFCC1DBC0D50E28FEE0C0093 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +123,8 @@
 		8872E718235C0DED00CABAFA /* RemoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				88DEBB9623672F4300575829 /* Reachability.h */,
+				88DEBB9523672F4200575829 /* Reachability.m */,
 				88DEBB852365A47200575829 /* HTSlide */,
 				88DEBB7C236595D800575829 /* GCDAsyncUdpSocket.h */,
 				88DEBB7B236595D800575829 /* GCDAsyncUdpSocket.m */,
@@ -107,6 +138,9 @@
 				8872E724235C0DEE00CABAFA /* LaunchScreen.storyboard */,
 				8872E727235C0DEE00CABAFA /* Info.plist */,
 				8872E728235C0DEE00CABAFA /* main.m */,
+				88DEBB9C2367337000575829 /* InfoViewController.h */,
+				88DEBB9D2367337000575829 /* InfoViewController.m */,
+				88DEBB9F2367339E00575829 /* KeyBoadKey.h */,
 			);
 			path = RemoteControl;
 			sourceTree = "<group>";
@@ -114,6 +148,9 @@
 		8872E731235C0F1E00CABAFA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				88DEBBA0236736BE00575829 /* refresh@3x.png */,
+				88DEBB9A236732E500575829 /* light@3x.png */,
+				88DEBB982367316700575829 /* mac@3x.png */,
 				88DEBB8123659D8600575829 /* wifi@3x.png */,
 				8872E742235C4E4200CABAFA /* setting@3x.png */,
 				8872E740235C13DA00CABAFA /* player_pause@3x.png */,
@@ -144,6 +181,14 @@
 			path = HTSlide;
 			sourceTree = "<group>";
 		};
+		CFCC1DBC0D50E28FEE0C0093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5785754AF403D81BDCD6523F /* Pods_RemoteControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8872E72C235C0DEE00CABAFA /* Build configuration list for PBXNativeTarget "RemoteControl" */;
 			buildPhases = (
+				1845EC2D2FCA85353C681DBB /* [CP] Check Pods Manifest.lock */,
 				8872E712235C0DED00CABAFA /* Sources */,
 				8872E713235C0DED00CABAFA /* Frameworks */,
 				8872E714235C0DED00CABAFA /* Resources */,
+				A64980DBD20EF5F51CC4254B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,14 +249,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8872E743235C4E4200CABAFA /* setting@3x.png in Resources */,
+				88DEBB992367316700575829 /* mac@3x.png in Resources */,
 				8872E73B235C13CC00CABAFA /* play_pre@3x.png in Resources */,
 				8872E734235C0F4500CABAFA /* info@3x.png in Resources */,
 				8872E73E235C13CC00CABAFA /* volume_up@3x.png in Resources */,
 				88DEBB8223659D8600575829 /* wifi@3x.png in Resources */,
 				8872E73C235C13CC00CABAFA /* play_next@3x.png in Resources */,
 				8872E723235C0DEE00CABAFA /* Assets.xcassets in Resources */,
+				88DEBBA1236736BE00575829 /* refresh@3x.png in Resources */,
 				8872E721235C0DED00CABAFA /* Main.storyboard in Resources */,
 				8872E73D235C13CC00CABAFA /* volume_down@3x.png in Resources */,
+				88DEBB9B236732E500575829 /* light@3x.png in Resources */,
 				8872E73F235C13CC00CABAFA /* volume_none@3x.png in Resources */,
 				88DEBB7E23659C0A00575829 /* LaunchScreen.storyboard in Resources */,
 				8872E741235C13DA00CABAFA /* player_pause@3x.png in Resources */,
@@ -218,6 +268,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1845EC2D2FCA85353C681DBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A64980DBD20EF5F51CC4254B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControl/Pods-RemoteControl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControl/Pods-RemoteControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8872E712235C0DED00CABAFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -225,8 +324,10 @@
 			files = (
 				88DEBB922365A47200575829 /* UIView+HTExtention.m in Sources */,
 				88DEBB902365A47200575829 /* HTSlideSideBarController.m in Sources */,
+				88DEBB9E2367337000575829 /* InfoViewController.m in Sources */,
 				88DEBB942365A47200575829 /* HTSlideBaseController.m in Sources */,
 				88DEBB7D236595D800575829 /* GCDAsyncUdpSocket.m in Sources */,
+				88DEBB9723672F4300575829 /* Reachability.m in Sources */,
 				8872E71E235C0DED00CABAFA /* ViewController.m in Sources */,
 				8872E729235C0DEE00CABAFA /* main.m in Sources */,
 				8872E71B235C0DED00CABAFA /* AppDelegate.m in Sources */,
@@ -371,6 +472,7 @@
 		};
 		8872E72D235C0DEE00CABAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C4DAE3A3992861AFE4C115 /* Pods-RemoteControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -390,6 +492,7 @@
 		};
 		8872E72E235C0DEE00CABAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADC995353990D3FC46A7460 /* Pods-RemoteControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
