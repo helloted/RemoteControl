@@ -3,7 +3,7 @@ import socket
 import uuid
 import Quartz
 import json
-
+import AppKit
 
 
 NSSystemDefined = 14
@@ -11,7 +11,7 @@ NSSystemDefined = 14
 def PostKeyEvent(key):
   print key
   val = int(key)
-  if val > 0 and val < 25:
+  if val >= 0 and val < 25:
     HIDPostAuxKey(int(key))
   else:
     print 'wrong key'
@@ -43,6 +43,8 @@ def HIDPostAuxKey(key):
 
 
 if __name__ == '__main__':
+    info = AppKit.NSBundle.mainBundle().infoDictionary()
+    info["LSBackgroundOnly"] = "1"
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     # 绑定端口:
     s.bind(('', 31245))
@@ -74,9 +76,14 @@ if __name__ == '__main__':
 
             elif my_type == 3:
                 input_key = dic.setdefault('inputKey',0)
-                if input_key > 0:
-                    PostKeyEvent(input_key)
-                print 'type ==3'
+                if input_key >= 0:
+                    try:
+                        PostKeyEvent(input_key)
+                    except Exception, err:
+                        my_json = {"type": 4, "msg": 'inputKey:{}failed'.format(input_key)}
+                        print err
+                    else:
+                        my_json = {"type": 4, "msg":'inputKey:{}success'.format(input_key)}
 
             else:
                 print my_type
