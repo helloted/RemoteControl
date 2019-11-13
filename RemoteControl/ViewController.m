@@ -24,7 +24,7 @@ typedef enum : NSUInteger {
 } SendType;
 
 
-#define MacPort 31245
+#define MacPort 31243
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define MainColor  COLOR_HEX(0x00C78C)
@@ -128,6 +128,7 @@ typedef enum : NSUInteger {
     // 开始扫描
     _timerCount = 0;
     self.baseView.hidden = YES;
+    self.receivedMacHostIP = nil;
     [SVProgressHUD showWithStatus:@"请先打开电脑端程序\n正在搜索中..."];
     self.timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
