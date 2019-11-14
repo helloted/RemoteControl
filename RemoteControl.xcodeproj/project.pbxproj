@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DD1FBC023796C2C00C26A3C /* mac_screen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DD1FBBF23796C2C00C26A3C /* mac_screen@3x.png */; };
+		5DD1FBC223796DB100C26A3C /* mac_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DD1FBC123796DB100C26A3C /* mac_image@3x.png */; };
 		67CAB30FE49A415723FD4F56 /* Pods_RemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5785754AF403D81BDCD6523F /* Pods_RemoteControl.framework */; };
 		8872E71B235C0DED00CABAFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8872E71A235C0DED00CABAFA /* AppDelegate.m */; };
 		8872E71E235C0DED00CABAFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8872E71D235C0DED00CABAFA /* ViewController.m */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		4ADC995353990D3FC46A7460 /* Pods-RemoteControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControl/Pods-RemoteControl.release.xcconfig"; sourceTree = "<group>"; };
 		5785754AF403D81BDCD6523F /* Pods_RemoteControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD1FBBF23796C2C00C26A3C /* mac_screen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mac_screen@3x.png"; path = "icons/mac_screen@3x.png"; sourceTree = "<group>"; };
+		5DD1FBC123796DB100C26A3C /* mac_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mac_image@3x.png"; path = "icons/mac_image@3x.png"; sourceTree = "<group>"; };
 		8872E716235C0DED00CABAFA /* RemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8872E719235C0DED00CABAFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8872E71A235C0DED00CABAFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 		8872E731235C0F1E00CABAFA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5DD1FBC123796DB100C26A3C /* mac_image@3x.png */,
+				5DD1FBBF23796C2C00C26A3C /* mac_screen@3x.png */,
 				88DEBBA0236736BE00575829 /* refresh@3x.png */,
 				88DEBB9A236732E500575829 /* light@3x.png */,
 				88DEBB982367316700575829 /* mac@3x.png */,
@@ -251,6 +257,7 @@
 				8872E743235C4E4200CABAFA /* setting@3x.png in Resources */,
 				88DEBB992367316700575829 /* mac@3x.png in Resources */,
 				8872E73B235C13CC00CABAFA /* play_pre@3x.png in Resources */,
+				5DD1FBC223796DB100C26A3C /* mac_image@3x.png in Resources */,
 				8872E734235C0F4500CABAFA /* info@3x.png in Resources */,
 				8872E73E235C13CC00CABAFA /* volume_up@3x.png in Resources */,
 				88DEBB8223659D8600575829 /* wifi@3x.png in Resources */,
@@ -263,6 +270,7 @@
 				8872E73F235C13CC00CABAFA /* volume_none@3x.png in Resources */,
 				88DEBB7E23659C0A00575829 /* LaunchScreen.storyboard in Resources */,
 				8872E741235C13DA00CABAFA /* player_pause@3x.png in Resources */,
+				5DD1FBC023796C2C00C26A3C /* mac_screen@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

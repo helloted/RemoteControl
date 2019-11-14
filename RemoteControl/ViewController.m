@@ -24,11 +24,12 @@ typedef enum : NSUInteger {
 } SendType;
 
 
-#define MacPort 31245
+#define MacPort 31243
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define MainColor  COLOR_HEX(0x00C78C)
 #define kRemoteIPKey  @"kRemoteIPKey"
+#define kNotFirstInstallKey  @"kNotFirstInstallKey"
 
 @interface ViewController () <UITextFieldDelegate,GCDAsyncUdpSocketDelegate>
 
@@ -105,9 +106,17 @@ typedef enum : NSUInteger {
         [alertController addAction:okAction];
         
 //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.navigationController presentViewController:alertController animated:YES completion:nil];
+//            [self.navigationController presentViewController:alertController animated:YES completion:nil];
 //        });
         
+    }
+    
+    
+    BOOL notFirst = [[NSUserDefaults standardUserDefaults] boolForKey:kNotFirstInstallKey];
+    if (!notFirst) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self lightBtnClicked];
+        });
     }
     
 }
