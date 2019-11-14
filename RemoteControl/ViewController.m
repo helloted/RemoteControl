@@ -137,6 +137,7 @@ typedef enum : NSUInteger {
     // 开始扫描
     _timerCount = 0;
     self.baseView.hidden = YES;
+    self.receivedMacHostIP = nil;
     [SVProgressHUD showWithStatus:@"请先打开电脑端程序\n正在搜索中..."];
     self.timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
