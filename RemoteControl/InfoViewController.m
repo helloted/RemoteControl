@@ -39,7 +39,7 @@ blue:((float) (_hex & 0xFF)) / 255.0 alpha:1.0f]
         make.left.mas_equalTo(self.view.mas_left).offset(Margin);
         make.right.mas_equalTo(self.view).offset(-Margin);
     }];
-    urlTextView.text = @"1、首先下载Mac端应用程序https://www.helloted.com/download/control.pkg";
+    urlTextView.text = @"1、首先下载Mac端应用程序http://www.helloted.com/mac_app/";
     
 
     urlTextView.attributedText = [self getContentLabelAttributedText];

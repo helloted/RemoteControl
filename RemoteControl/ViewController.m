@@ -116,6 +116,7 @@ typedef enum : NSUInteger {
     if (!notFirst) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self lightBtnClicked];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kNotFirstInstallKey];
         });
     }
     
@@ -145,15 +146,6 @@ typedef enum : NSUInteger {
 }
 
 - (void)timerAction{
-    if (_timerCount >= 5) {
-        [self.timer invalidate];
-        [SVProgressHUD showErrorWithStatus:@"扫描结束，没有找到Mac\n请确认同一个Wifi下的Mac电脑已安装Mac端程序 "];
-        return;
-    }else{
-        _timerCount += 1;
-    }
-    
-    
     if (self.receivedMacHostIP && self.receivedMacHostIP.length) {
         [self.timer invalidate];
         NSString *str =[NSString stringWithFormat:@"成功找到Mac电脑\n%@(%@)",self.receivedMacHostName,self.receivedMacHostIP];
@@ -163,6 +155,15 @@ typedef enum : NSUInteger {
     }else{
         [self broadcast];
     }
+    
+    if (_timerCount >= 20) {
+        [self.timer invalidate];
+        [SVProgressHUD showErrorWithStatus:@"扫描结束，没有找到Mac\n请确认同一个Wifi下的Mac电脑已安装Mac端程序 "];
+        return;
+    }else{
+        _timerCount += 1;
+    }
+    
 }
 
 - (void)lightBtnClicked{
