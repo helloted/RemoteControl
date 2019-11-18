@@ -83,7 +83,7 @@ typedef enum : NSUInteger {
         [reachability startNotifier];
         NetworkStatus status = [reachability currentReachabilityStatus];
         if (status != ReachableViaWiFi) {
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"请先打开WIFI" message:@"iPhone与Mac电脑需在同一个WiFi" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"请先打开WIFI" message:@"iPhone与Mac电脑需在同一个局域网WiFi" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil];
             [alertController addAction:cancelAction];
             [self.navigationController presentViewController:alertController animated:YES completion:nil];
@@ -96,7 +96,7 @@ typedef enum : NSUInteger {
     }else{ // 没有记录过IP
         self.baseView.hidden = YES;
         
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"扫描同一个Wifi下的Mac电脑" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"扫描同一个局域网Wifi下的Mac电脑" preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
@@ -139,7 +139,7 @@ typedef enum : NSUInteger {
     _timerCount = 0;
     self.baseView.hidden = YES;
     self.receivedMacHostIP = nil;
-    [SVProgressHUD showWithStatus:@"请先打开电脑端程序\n正在搜索中..."];
+    [SVProgressHUD showWithStatus:@"请先打开电脑端程序，确保iPhone与Mac电脑在同一个局域网内\n正在搜索中..."];
     self.timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
     
@@ -158,7 +158,7 @@ typedef enum : NSUInteger {
     
     if (_timerCount >= 20) {
         [self.timer invalidate];
-        [SVProgressHUD showErrorWithStatus:@"扫描结束，没有找到Mac\n请确认同一个Wifi下的Mac电脑已安装Mac端程序 "];
+        [SVProgressHUD showErrorWithStatus:@"扫描结束，没有找到Mac\n请确认同一个局域网Wifi下的Mac电脑已安装Mac端程序,请确认后再重试 "];
         return;
     }else{
         _timerCount += 1;
