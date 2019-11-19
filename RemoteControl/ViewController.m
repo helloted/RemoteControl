@@ -125,6 +125,7 @@ typedef enum : NSUInteger {
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     [SVProgressHUD dismiss];
+    [self.timer invalidate];
 }
 
 - (void)leftBtnClicked{
