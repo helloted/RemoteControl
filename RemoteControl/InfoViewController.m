@@ -107,16 +107,16 @@ blue:((float) (_hex & 0xFF)) / 255.0 alpha:1.0f]
 
 - (NSAttributedString *)getContentLabelAttributedText
 {
-    NSString *text = @"1、首先下载Mac端应用程序 http://www.helloted.com/download/control.pkg";
+    NSString *text = @"1、首先下载Mac端应用程序 http://www.helloted.com/mac_app/";
     NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16],NSForegroundColorAttributeName:[UIColor lightGrayColor]}];
     
-    [attrStr addAttribute:NSLinkAttributeName value:@"http://www.helloted.com/download/control.pkg" range:NSMakeRange(15, 44)];
+    [attrStr addAttribute:NSLinkAttributeName value:@"http://www.helloted.com/mac_app/" range:NSMakeRange(15, 32)];
     return attrStr;
 }
 
 - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(nonnull NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction{
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    pasteboard.string = @"http://www.helloted.com/download/control.pkg";
+    pasteboard.string = @"http://www.helloted.com/mac_app/";
     [SVProgressHUD showSuccessWithStatus:@"复制成功"];
     return NO;
 }
