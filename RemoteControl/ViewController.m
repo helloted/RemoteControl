@@ -122,6 +122,11 @@ typedef enum : NSUInteger {
     
 }
 
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [SVProgressHUD dismiss];
+}
+
 - (void)leftBtnClicked{
     Reachability *reachability = [Reachability reachabilityForInternetConnection];
     [reachability startNotifier];
@@ -159,6 +164,7 @@ typedef enum : NSUInteger {
     if (_timerCount >= 20) {
         [self.timer invalidate];
         [SVProgressHUD showErrorWithStatus:@"扫描结束，没有找到Mac\n请确认同一个局域网Wifi下的Mac电脑已安装Mac端程序,请确认后再重试 "];
+        [SVProgressHUD dismissWithDelay:2];
         return;
     }else{
         _timerCount += 1;
