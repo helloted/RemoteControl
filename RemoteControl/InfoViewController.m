@@ -75,7 +75,7 @@ blue:((float) (_hex & 0xFF)) / 255.0 alpha:1.0f]
     
     UILabel *refreshLabel = [[UILabel alloc]init];
     [self.view addSubview:refreshLabel];
-    refreshLabel.text = @"3、首页左上角按钮进行刷新，获取Mac的地址";
+    refreshLabel.text = @"3、首页左上角按钮进行刷新，搜索Mac电脑";
     refreshLabel.textColor = [UIColor lightGrayColor];
     [refreshLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(imgV.mas_bottom).offset(5);
@@ -107,10 +107,10 @@ blue:((float) (_hex & 0xFF)) / 255.0 alpha:1.0f]
 
 - (NSAttributedString *)getContentLabelAttributedText
 {
-    NSString *text = @"1、首先下载Mac端应用程序 http://www.helloted.com/mac_app/";
+    NSString *text = @"1、首先点击复制下载Mac端应用程序 http://www.helloted.com/mac_app/";
     NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16],NSForegroundColorAttributeName:[UIColor lightGrayColor]}];
     
-    [attrStr addAttribute:NSLinkAttributeName value:@"http://www.helloted.com/mac_app/" range:NSMakeRange(15, 32)];
+    [attrStr addAttribute:NSLinkAttributeName value:@"http://www.helloted.com/mac_app/" range:NSMakeRange(19, 32)];
     return attrStr;
 }
 
